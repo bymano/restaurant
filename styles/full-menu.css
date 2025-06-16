@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 7;
+  z-index: 99;
   transition: .15s;
 }
 .menu-display {
