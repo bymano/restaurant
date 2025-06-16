@@ -1,0 +1,125 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  z-index: 5;
+  transform: translateY(-100%);
+  animation: swipeDown .5s ease forwards;
+}
+@keyframes swipeDown {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+header .introduction-section {
+  margin-right: 5rem;
+}
+header .introduction-section .logo-container h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: 'Lobster';
+  text-shadow: 0 0 5px;
+}
+
+header .dropdown-nav {
+  position: relative;
+  display: none;
+}
+header .dropdown-nav i {
+  font-size: 2.5rem;
+  border-radius: 50%;
+  padding: .4rem;
+  transition: .3s;
+  cursor: pointer;
+}
+header .dropdown-nav i:hover {
+  background-color: black;
+  color: white;
+}
+
+header .dropdown-nav nav {
+  position: absolute;
+  top: 42px;
+  left: -62px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column; 
+  transition: .3s; 
+  z-index: 6;
+}
+header .dropdown-nav nav button {
+  font-size: 1.5rem;
+  width: 100%;
+  left: 0;
+  padding: 1rem 3.5rem;
+  margin: 0;
+  transition: .25s;
+}
+header .dropdown-nav nav button:hover {
+  background-color: black;
+  color: white;
+}
+header .dropdown-nav:hover nav,
+header .dropdown-nav:focus nav {
+  opacity: 1;
+  pointer-events: all;
+}
+
+header nav {
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 740px) {
+  header {
+    padding: 1rem 7.5rem;
+  }
+  header .main-nav {
+    display: none;
+  }
+  header .dropdown-nav {
+    display: initial;
+  }
+}
+header nav button {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+header nav button:hover {
+  opacity: .8;
+}
+header .main-nav button::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: .15s;
+}
+header .main-nav button:focus:after,
+header .main-nav button:hover:after {
+  transform: scaleX(1);
+}

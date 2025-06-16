@@ -1,0 +1,135 @@
+.full-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .75);
+  display: none;
+  transform: scale(0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  transition: .15s;
+}
+.menu-display {
+  display: flex !important;
+}
+.menu-active {
+    transform: scale(1)
+}
+.full-menu .close-menu-button {
+  width: 75%;
+  max-width: calc(600px + 3rem);
+  font-size: 1.5rem;
+  color: white;
+  background-color: darkblue;
+  padding: .5rem 0;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: .25s;
+}
+.full-menu .menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  width: 75%;
+  max-width: 600px;
+  border-radius: 12px;
+  background: rgba(249, 250, 255);
+  padding: 1.5rem;
+  overflow-y: hidden;
+}
+.full-menu .menu-container .categories-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .25rem;
+  margin-bottom: 1rem;
+}
+.full-menu .menu-container .categories-container button {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(125, 0, 0);
+  border: 2px solid transparent;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem;
+  outline: none;
+  transition: .25s all, border 0s;
+  cursor: pointer;
+}
+.full-menu .menu-container .categories-container button:focus,
+.full-menu .menu-container .categories-container button:hover {
+  color: rgb(125, 0, 0);
+  background-color: white;
+}
+.full-menu .menu-container .categories-container button:focus {
+  border: 2px solid rgb(125, 0, 0);
+}
+.full-menu .menu-container .types-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  width: 75%;
+  margin: 0 auto;
+  gap: 1px;
+  margin-bottom: 1rem;
+  transition: .25s;
+}
+.full-menu .menu-container .types-container .type {
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  margin: .1rem;
+  text-align: center;
+  text-wrap: nowrap;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.full-menu .menu-container .types-container .type:hover {
+  color: white;
+  background-color: black;
+}
+
+.full-menu .menu-container .foods-container {
+  flex: 1;
+  overflow-y: scroll;
+  transition: .25s;
+}
+
+.full-menu .menu-container .foods-container .type-container .type-name {
+  font-size: 3rem;
+  color: (17, 24, 39);
+  font-weight: 600;
+}
+
+.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container {
+  background-color: rgb(255, 255, 255);
+  padding: .5rem 1rem;
+  border-radius: 12px;
+  margin-bottom: .5rem;
+}
+.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-name {
+  color: rgb(17, 24, 39);
+  font-weight: 500;
+  margin-bottom: .25rem;
+}
+.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-count {
+  color: black;
+  font-size: .85rem;
+  font-weight: 400;
+  margin-bottom: .25rem;
+}
+.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-price {
+  color: rgb(125, 115, 0);
+  font-size: .93rem;
+  font-weight: 700;
+}

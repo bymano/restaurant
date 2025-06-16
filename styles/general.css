@@ -1,0 +1,36 @@
+* {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 12.5rem 0 0 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: .65rem;
+  }
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+button {
+  text-wrap: nowrap;
+}

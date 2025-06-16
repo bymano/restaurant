@@ -1,0 +1,127 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 3rem;
+  margin-bottom: 7.5rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {}
+main .hero-section {
+  font-weight: 600;
+  transform: translateX(-35%);
+  animation: swipeRight .7s ease forwards;
+}
+@keyframes swipeRight {
+  100% {
+    transform: translateX(0);
+  }
+}
+main .hero-section h1 {
+  font-size: max(5vw, 50px);
+  line-height: max(5.75vw, 60px);
+  text-wrap: nowrap;
+  font-family: 'Sofia';
+}
+main .hero-section h1::selection {
+  background-color: black;
+  color: white; 
+}
+
+main .hero-section .buttons {
+  margin: -1.5rem 0 2rem 0;
+}
+@media screen and (max-width: 350px) {
+  main .hero-section .buttons {
+    text-align: center;
+  }
+}
+main .hero-section .buttons button {
+  min-width: 12.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: .25s;
+  margin: .5rem;
+}
+main .hero-section .view-menu-button {
+  position: relative;
+  color: white;
+  background-color: red;
+  overflow: hidden;
+}
+main .hero-section .view-menu-button:hover {
+  color: transparent;
+}
+main .hero-section .view-menu-button::before {
+  content: 'View Full Menu';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2.5rem);
+  transition: .4s;
+  color: black;
+}
+main .hero-section .view-menu-button:hover:before {
+  transform: translateY(1rem);
+}
+main .hero-section .book-table-button {
+  color: black;
+  background-color: rgb(235, 235, 235);
+}
+main .hero-section .book-table-button:hover {
+  color: white;
+  background-color: rgb(25, 25, 25);
+}
+
+main .hero-section .customers {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+main .hero-section .customers .customer {
+  width: 2.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+main .hero-section .rating {
+  width: 4.5rem;
+  margin-top: -1rem;
+}
+
+main .food-display-section {
+  animation: spin 1.25s ease forwards;
+  transform: rotate(500deg);
+}
+@keyframes spin {
+  100% {
+    transform: rotate(0);
+  }
+}
+
+main .food-display-section img {
+  width: max(40vw, 350px);
+  border-radius: 50%;
+  transition: transform 1s;
+  user-select: none;
+}
+main .food-display-section img:hover {
+  transform: rotate(360deg);
+}
+@media screen and (max-width: 700px) {
+  main {
+    justify-content: center;
+  }
+  main .hero-section h1 {
+    text-align: center;
+  }
+  main .food-display-section img {
+    display: none;
+  }
+}

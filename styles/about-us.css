@@ -1,0 +1,45 @@
+.about-us {
+  position: relative;
+  min-height: 30vh;
+  width: 100%;
+  background-image: url('../images/restaurant-room.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us p {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  backdrop-filter: brightness(50%);
+  width: 100%;
+  box-sizing: border-box;
+}
+.about-us .about-us-text {
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75), transparent);
+  backdrop-filter: none;
+  height: 100%;
+  font-size: 2rem;
+  font-family: 'Dancing Script';
+  border-radius: 0;
+  margin: 0;
+  text-shadow: 0 0 5px;
+  padding: 4rem;
+}
+
+.about-us .about-us-information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+.about-us .about-us-information p {
+  text-align: center;
+}
