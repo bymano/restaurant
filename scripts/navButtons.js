@@ -9,7 +9,8 @@ function activateNavigationButtons() {
 
   navOptions.forEach(nav => {
     nav.buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
         nav.element.scrollIntoView(scrollOptions)
       })
     })

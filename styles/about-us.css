@@ -12,12 +12,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* font-family: 'Poppins'; */
 }
 .about-us p {
+  font-family: 'Dancing Script';
   padding: 1rem;
   margin: 0;
   font-size: 1.5rem;
-  font-family: 'Poppins';
   backdrop-filter: brightness(50%);
   width: 100%;
   box-sizing: border-box;
@@ -27,7 +28,6 @@
   backdrop-filter: none;
   height: 100%;
   font-size: 2rem;
-  font-family: 'Dancing Script';
   border-radius: 0;
   margin: 0;
   text-shadow: 0 0 5px;

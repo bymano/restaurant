@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Kyna - A Lebanese restaurant offering authentic dishes, cozy ambiance, and memorable dining experiences in Sidon, Lebanon.">
+  <meta name="keywords" content="Lebanese restaurant, Sidon, Kyna, authentic food, dine-in, breakfast, lunch, dinner, halal, vegan, cozy, romantic, local ingredients">
+  <meta name="author" content="Mano">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Kyna Restaurant | Memories Made With Every Bite">
+  <meta property="og:description" content="Enjoy Lebanese cuisine at Kyna in Sidon. Great food, cozy atmosphere, and unforgettable experiences.">
+  <meta property="og:image" content="https://bymano.github.io/restaurant/images/tabouleh.png">
+  <meta property="og:url" content="https://bymano.github.io/restaurant">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kyna Restaurant | Memories Made With Every Bite">
+  <meta name="twitter:description" content="Authentic Lebanese food and heartfelt dining at Kyna in Sidon.">
+  <meta name="twitter:image" content="https://bymano.github.io/restaurant/images/tabouleh.png">
+
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofia&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/hero.css">
@@ -22,7 +35,7 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/credits.css">
   <link rel="stylesheet" href="styles/full-menu.css">
-  <title>Restaurant</title>
+  <title>Kyna Restaurant</title>
 </head>
 <body>
   <header>
@@ -31,20 +44,20 @@
         <a href="index.html"><h1>Kyna</h1></a>
       </div>
     </div>
-      <div class="dropdown-nav" role="Button" tabindex="0">
+      <div class="dropdown-nav" role="button" tabindex="0" aria-expanded="false">
         <i class='bx  bx-list'></i> 
         <nav>
-          <button class="home-nav-button">Home</button>
-          <button class="menu-nav-button open-menu-button">Menu</button>
-          <button class="about-us-nav-button">About Us</button>
-          <button class="feedback-nav-button">Location</button>        
+        <a href="#about-us" class="home-nav-button">Home</a>
+        <a href='#dishes-grid' class="menu-nav-button open-menu-button">Menu</a>
+        <a href='#about-us' class="about-us-nav-button">About Us</a>
+        <a href='#footer' class="feedback-nav-button">Location</a>        
         </nav>
       </div>
       <nav class="main-nav">
-        <button class="home-nav-button" autofocus>Home</button>
-        <button class="menu-nav-button open-menu-button">Menu</button>
-        <button class="about-us-nav-button">About Us</button>
-        <button class="feedback-nav-button">Location</button>
+        <a href="#about-us" class="home-nav-button" autofocus>Home</a>
+        <a href='#dishes-grid' class="menu-nav-button open-menu-button">Menu</a>
+        <a href='#about-us' class="about-us-nav-button">About Us</a>
+        <a href='#footer' class="feedback-nav-button">Location</a>
       </nav>
   </header>
 
@@ -53,45 +66,45 @@
       <h1>Memories<br>made with<br>every bite.</h1>
       <div class="buttons">
         <button class="view-menu-button open-menu-button">View Full Menu</button>
-        <button class="book-table-button feedback-nav-button">Where is Kyna?</button>
+        <a href="#footer" class="book-table-button feedback-nav-button">Where is Kyna?</a>
       </div>
       <div class="reviews">
         <span>Reviews</span>
         <div class="customers">
-          <img src="images/first-customer.jpeg" class="customer" alt="Customer">
-          <img src="images/fourth-customer.jpeg" class="customer" alt="Customer">
-          <img src="images/second-customer.jpeg" class="customer" alt="Customer">
-          <img src="images/third-customer.jpeg" class="customer" alt="Customer">
+          <img src="images/first-customer.jpeg" class="customer" alt="Smiling Customer">
+          <img src="images/fourth-customer.jpeg" class="customer" alt="Smiling Customer">
+          <img src="images/second-customer.jpeg" class="customer" alt="Smiling Customer">
+          <img src="images/third-customer.jpeg" class="customer" alt="Smiling Customer">
         </div>
-        <img src="images/five-stars.png" class="rating">
+        <img src="images/five-stars.png" class="rating" alt="Five Star Rating">
       </div>
     </section>
     <aside class="food-display-section">
-      <img src="images/tabouleh.png" alt="Pasta Dish">
+      <img src="images/tabouleh.png" alt="Lebanese Tabbouleh Plate">
     </aside>
   </main>
 
   <section class="dishes-grid" id="dishes-grid">
-    <article class="open-menu-button">
-      <img src="images/tabouleh.png">
+    <article class="open-menu-button" role="button">
+      <img src="images/tabouleh.png" alt="Lebanese Tabbouleh Plate">
       <p class="dish-name">Tabouleh</p>
       <p class="dish-ingredients">With fresh mint</p>
       <p class="dish-price">$5.75</p>
     </article>
-    <article class="open-menu-button">
-      <img class="second-dish" src="images/fried-kibbeh.png">
+    <article class="open-menu-button" role="button">
+      <img class="second-dish" src="images/fried-kibbeh.png" alt="Fried Kibbeh Plate">
       <p class="dish-name">Fried Kibbeh</p>
       <p class="dish-ingredients">With yogurt sauce</p>
       <p class="dish-price">$7.00</p>
     </article>
-    <article class="open-menu-button">
-      <img src="images/french-fries.png">
+    <article class="open-menu-button" role="button">
+      <img src="images/french-fries.png" alt="French Fries Plate">
       <p class="dish-name">French Fries</p>
       <p class="dish-ingredients">With ketchup</p>
       <p class="dish-price">$5.00</p>
     </article>
-    <article class="open-menu-button">
-      <img class="fourth-dish" src="images/labneh.png">
+    <article class="open-menu-button" role="button">
+      <img class="fourth-dish" src="images/labneh.png" alt="Lebanese Labneh Plate">
       <p class="dish-name">Labneh Baladiyeh</p>
       <p class="dish-ingredients">With olive oil </p>
       <p class="dish-price">$4.00</p>
@@ -126,16 +139,14 @@
       <p>Cash only.</p>
       <p>Street, paid, valet, and ample parking options.</p>
     </div>
-    <br>
-    <br>
   </section>
   
   <footer id="footer">
     <nav>
-        <button class="home-nav-button">Home</button>
-        <button class="menu-nav-button">Menu</button>
-        <button class="about-us-nav-button">About Us</button>
-        <button class="feedback-nav-button">Feedback</button>
+        <a href="#about-us" class="home-nav-button">Home</a>
+        <a href='#dishes-grid' class="menu-nav-button open-menu-button">Menu</a>
+        <a href='#about-us' class="about-us-nav-button">About Us</a>
+        <a href='#footer' class="feedback-nav-button">Location</a>
     </nav>
     <div class="information">
       <p class="address"><span>Address:</span>Sidon, Lebanon | Facing Ashmoun Temple </p>

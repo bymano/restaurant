@@ -15,7 +15,7 @@ footer nav {
   display: flex;
   flex-direction: column;
 }
-footer nav button {
+footer nav a {
   color: inherit;
   font-weight: 700;
   font-size: 1.25rem;
