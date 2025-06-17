@@ -38,7 +38,8 @@ main .hero-section .buttons {
     text-align: center;
   }
 }
-main .hero-section .buttons button {
+main .hero-section .buttons button,
+main .hero-section .buttons a {
   min-width: 12.5rem;
   font-size: 1rem;
   border: none;
