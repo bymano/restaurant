@@ -36,18 +36,19 @@ header .dropdown-nav {
   position: relative;
   display: none;
 }
-header .dropdown-nav i {
-  font-size: 2.5rem;
+header .dropdown-nav button {
+  background-color: transparent;
+  border: none;
   border-radius: 50%;
-  padding: .4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: .3s;
   cursor: pointer;
 }
-header .dropdown-nav i:hover {
-  background-color: black;
-  color: white;
+header .dropdown-nav button img {
+  width: 20px;
 }
-
 header .dropdown-nav nav {
   position: absolute;
   top: 42px;
