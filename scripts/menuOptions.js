@@ -88,6 +88,7 @@ function setFood(category) {
 }
 
 function emptyFood() {
+  foodsContainer.scrollTo({top : 0})
   foodsContainer.innerHTML = '';
   typesContainer.innerHTML = '';
 }

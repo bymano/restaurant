@@ -68,13 +68,13 @@
   height: 12.5rem;
   object-fit: cover;
 }
-.dishes-grid article .second-dish {
+.second-dish {
   transform: scale(.9);
 }
-.dishes-grid article .fourth-dish {
+.fourth-dish {
   left: 18%;
 }
-.dishes-grid article .dish-ingredients {
+.dish-ingredients {
   font-size: .75rem;
   margin: -.5rem 0 3rem 0;
 }

@@ -17,9 +17,9 @@
   display: flex !important;
 }
 .menu-active {
-    transform: scale(1)
+  transform: scale(1)
 }
-.full-menu .close-menu-button {
+.close-menu-button {
   width: 75%;
   max-width: calc(600px + 3rem);
   font-size: 1.5rem;
@@ -32,7 +32,7 @@
   cursor: pointer;
   transition: .25s;
 }
-.full-menu .menu-container {
+.menu-container {
   display: flex;
   flex-direction: column;
   height: 85%;
@@ -43,13 +43,13 @@
   padding: 1.5rem;
   overflow-y: hidden;
 }
-.full-menu .menu-container .categories-container {
+.categories-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .25rem;
   margin-bottom: 1rem;
 }
-.full-menu .menu-container .categories-container button {
+.categories-container button {
   font-size: 1.15rem;
   font-weight: 600;
   color: white;
@@ -61,16 +61,17 @@
   outline: none;
   transition: .25s all, border 0s;
   cursor: pointer;
+  user-select: none;
 }
-.full-menu .menu-container .categories-container button:focus,
-.full-menu .menu-container .categories-container button:hover {
+.categories-container button:focus,
+.categories-container button:hover {
   color: rgb(125, 0, 0);
   background-color: white;
 }
-.full-menu .menu-container .categories-container button:focus {
+.categories-container button:focus {
   border: 2px solid rgb(125, 0, 0);
 }
-.full-menu .menu-container .types-container {
+.types-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -81,7 +82,7 @@
   margin-bottom: 1rem;
   transition: .25s;
 }
-.full-menu .menu-container .types-container .type {
+.type {
   width: 100%;
   font-weight: 500;
   color: black;
@@ -94,41 +95,41 @@
   cursor: pointer;
 }
 
-.full-menu .menu-container .types-container .type:hover {
+.type:hover {
   color: white;
   background-color: black;
 }
 
-.full-menu .menu-container .foods-container {
+.foods-container {
   flex: 1;
   overflow-y: scroll;
   transition: .25s;
 }
 
-.full-menu .menu-container .foods-container .type-container .type-name {
+.type-name {
   font-size: 3rem;
   color: (17, 24, 39);
   font-weight: 600;
 }
 
-.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container {
+.dish-container {
   background-color: rgb(255, 255, 255);
   padding: .5rem 1rem;
   border-radius: 12px;
   margin-bottom: .5rem;
 }
-.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-name {
+.dish-name {
   color: rgb(17, 24, 39);
   font-weight: 500;
   margin-bottom: .25rem;
 }
-.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-count {
+.dish-count {
   color: black;
   font-size: .85rem;
   font-weight: 400;
   margin-bottom: .25rem;
 }
-.full-menu .menu-container .foods-container .type-container .dishes-container .dish-container .dish-price {
+.dish-price {
   color: rgb(125, 115, 0);
   font-size: .93rem;
   font-weight: 700;

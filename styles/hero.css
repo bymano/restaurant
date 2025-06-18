@@ -9,7 +9,7 @@ main {
 }
 
 @media screen and (max-width: 700px) {}
-main .hero-section {
+.hero-section {
   font-weight: 600;
   transform: translateX(-35%);
   animation: swipeRight .7s ease forwards;
@@ -19,27 +19,27 @@ main .hero-section {
     transform: translateX(0);
   }
 }
-main .hero-section h1 {
+.hero-section h1 {
   font-size: max(5vw, 50px);
   line-height: max(5.75vw, 60px);
   text-wrap: nowrap;
   font-family: 'Sofia';
 }
-main .hero-section h1::selection {
+.hero-section h1::selection {
   background-color: black;
   color: white; 
 }
 
-main .hero-section .buttons {
+.buttons {
   margin: -1.5rem 0 2rem 0;
 }
 @media screen and (max-width: 350px) {
-  main .hero-section .buttons {
+.buttons {
     text-align: center;
   }
 }
-main .hero-section .buttons button,
-main .hero-section .buttons a {
+.buttons button,
+.buttons a {
   min-width: 12.5rem;
   font-size: 1rem;
   border: none;
@@ -49,16 +49,16 @@ main .hero-section .buttons a {
   transition: .25s;
   margin: .5rem;
 }
-main .hero-section .view-menu-button {
+.view-menu-button {
   position: relative;
   color: white;
   background-color: red;
   overflow: hidden;
 }
-main .hero-section .view-menu-button:hover {
+.view-menu-button:hover {
   color: transparent;
 }
-main .hero-section .view-menu-button::before {
+.view-menu-button::before {
   content: 'View Full Menu';
   position: absolute;
   top: 0;
@@ -68,35 +68,35 @@ main .hero-section .view-menu-button::before {
   transition: .4s;
   color: black;
 }
-main .hero-section .view-menu-button:hover:before {
+.view-menu-button:hover:before {
   transform: translateY(1rem);
 }
-main .hero-section .book-table-button {
+.book-table-button {
   color: black;
   background-color: rgb(235, 235, 235);
 }
-main .hero-section .book-table-button:hover {
+.book-table-button:hover {
   color: white;
   background-color: rgb(25, 25, 25);
 }
 
-main .hero-section .customers {
+.customers {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
-main .hero-section .customers .customer {
+.customer {
   width: 2.3rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
 }
-main .hero-section .rating {
+.rating {
   width: 4.5rem;
   margin-top: -1rem;
 }
 
-main .food-display-section {
+.food-display-section {
   animation: spin 1.25s ease forwards;
   transform: rotate(500deg);
 }
@@ -106,23 +106,23 @@ main .food-display-section {
   }
 }
 
-main .food-display-section img {
+.food-display-section img {
   width: max(40vw, 350px);
   border-radius: 50%;
   transition: transform 1s;
   user-select: none;
 }
-main .food-display-section img:hover {
+.food-display-section img:hover {
   transform: rotate(360deg);
 }
 @media screen and (max-width: 700px) {
   main {
     justify-content: center;
   }
-  main .hero-section h1 {
+  .hero-section h1 {
     text-align: center;
   }
-  main .food-display-section img {
+  .food-display-section img {
     display: none;
   }
 }

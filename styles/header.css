@@ -22,21 +22,21 @@ header div {
   display: flex;
   align-items: center;
 }
-header .introduction-section {
+.introduction-section {
   margin-right: 5rem;
 }
-header .introduction-section .logo-container h1 {
+.introduction-section .logo-container h1 {
   font-size: 2.5rem;
   font-weight: 300;
   font-family: 'Lobster';
   text-shadow: 0 0 5px;
 }
 
-header .dropdown-nav {
+.dropdown-nav {
   position: relative;
   display: none;
 }
-header .dropdown-nav button {
+.dropdown-nav button {
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -46,10 +46,10 @@ header .dropdown-nav button {
   transition: .3s;
   cursor: pointer;
 }
-header .dropdown-nav button img {
+.dropdown-nav button img {
   width: 20px;
 }
-header .dropdown-nav nav {
+.dropdown-nav nav {
   position: absolute;
   top: 42px;
   left: -62px;
@@ -63,7 +63,7 @@ header .dropdown-nav nav {
   transition: .3s; 
   z-index: 6;
 }
-header .dropdown-nav nav a {
+.dropdown-nav nav a {
   font-size: 1.5rem;
   left: 0;
   padding: 1rem 3.5rem;
@@ -71,12 +71,12 @@ header .dropdown-nav nav a {
   text-align: center;
   transition: .25s;
 }
-header .dropdown-nav nav a:hover {
+.dropdown-nav nav a:hover {
   background-color: black;
   color: white;
 }
-header .dropdown-nav:hover nav,
-header .dropdown-nav:focus nav {
+.dropdown-nav:hover nav,
+.dropdown-nav:focus nav {
   opacity: 1;
   pointer-events: all;
 }
@@ -88,10 +88,10 @@ header nav {
   header {
     padding: 1rem 7.5rem;
   }
-  header .main-nav {
+  .main-nav {
     display: none;
   }
-  header .dropdown-nav {
+  .dropdown-nav {
     display: initial;
   }
 }
@@ -108,7 +108,7 @@ header nav a {
 header nav a:hover {
   opacity: .8;
 }
-header .main-nav a::after {
+.main-nav a::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -120,7 +120,7 @@ header .main-nav a::after {
   transform: scaleX(0);
   transition: .15s;
 }
-header .main-nav a:focus:after,
-header .main-nav a:hover:after {
+.main-nav a:focus:after,
+.main-nav a:hover:after {
   transform: scaleX(1);
 }

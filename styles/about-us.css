@@ -23,7 +23,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-.about-us .about-us-text {
+.about-us-text {
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75), transparent);
   backdrop-filter: none;
   height: 100%;
@@ -34,12 +34,12 @@
   padding: 4rem;
 }
 
-.about-us .about-us-information {
+.about-us-information {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
 }
-.about-us .about-us-information p {
+.about-us-information p {
   text-align: center;
 }
