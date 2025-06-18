@@ -24,7 +24,7 @@
   max-width: calc(600px + 3rem);
   font-size: 1.5rem;
   color: white;
-  background-color: darkblue;
+  background-color: orangered;
   padding: .5rem 0;
   border: none;
   border-radius: 12px;
@@ -54,7 +54,6 @@
   font-weight: 600;
   color: white;
   background-color: rgb(125, 0, 0);
-  border: 2px solid transparent;
   border: none;
   border-radius: 6px;
   padding: .5rem;
@@ -106,9 +105,32 @@
   transition: .25s;
 }
 
+.foods-container::-webkit-scrollbar {
+  width: 12px;
+}
+.foods-container::-webkit-scrollbar-track {
+  background: #f0e6d2;
+  border-radius: 10px;
+}
+.foods-container::-webkit-scrollbar-thumb {
+  background-color: #b5651d;
+  border-radius: 10px;
+  border: 3px solid #f0e6d2;
+}
+.foods-container::-webkit-scrollbar-thumb:hover {
+  background-color: #874c12;
+}
+.foods-container {
+  scrollbar-width: thin;
+  scrollbar-color: #b5651d #f0e6d2;
+}
+
+
+
+
 .type-name {
   font-size: 3rem;
-  color: (17, 24, 39);
+  color: rgb(17, 24, 39);
   font-weight: 600;
 }
 
@@ -118,18 +140,18 @@
   border-radius: 12px;
   margin-bottom: .5rem;
 }
-.dish-name {
+.dish-container .dish-name {
   color: rgb(17, 24, 39);
   font-weight: 500;
   margin-bottom: .25rem;
 }
-.dish-count {
+.dishc-container .dish-count {
   color: black;
   font-size: .85rem;
   font-weight: 400;
   margin-bottom: .25rem;
 }
-.dish-price {
+.dish-container .dish-price {
   color: rgb(125, 115, 0);
   font-size: .93rem;
   font-weight: 700;

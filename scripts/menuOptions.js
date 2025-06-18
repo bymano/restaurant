@@ -33,6 +33,7 @@ function createType(type) {
 
 function addType(type) {
   const typeEl = document.createElement('div');
+  typeEl.setAttribute('tabindex', 0);
   typeEl.classList.add('type');
   typeEl.textContent = type;
   typesContainer.appendChild(typeEl);
@@ -65,6 +66,7 @@ function setFood(category) {
   
       food.cuisine.forEach(dish => {
         const dishContainer = createDiv('dish-container', '');
+        dishContainer.setAttribute('tabindex', 0);
         
         const dishName = createDiv('dish-name', dish.name);
   

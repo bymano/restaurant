@@ -12,18 +12,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* font-family: 'Poppins'; */
 }
 .about-us p {
-  font-family: 'Dancing Script';
   padding: 1rem;
   margin: 0;
   font-size: 1.5rem;
-  backdrop-filter: brightness(50%);
   width: 100%;
   box-sizing: border-box;
 }
-.about-us-text {
+.about-us .about-us-text {
+  font-family: 'Dancing Script';
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75), transparent);
   backdrop-filter: none;
   height: 100%;
@@ -41,5 +39,7 @@
   gap: 1px;
 }
 .about-us-information p {
+  backdrop-filter: brightness(60%);
+  font-family: 'Cormorant Garamond';
   text-align: center;
 }
