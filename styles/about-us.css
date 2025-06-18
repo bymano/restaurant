@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 .about-us .about-us-text {
-  font-family: 'Dancing Script';
+  font-family: 'Sofia';
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75), transparent);
   backdrop-filter: none;
   height: 100%;
@@ -40,6 +40,6 @@
 }
 .about-us-information p {
   backdrop-filter: brightness(60%);
-  font-family: 'Cormorant Garamond';
+  font-family: 'Oswald';
   text-align: center;
 }
