@@ -33,9 +33,11 @@ main {
 .buttons {
   margin: -1.5rem 0 2rem 0;
 }
+
 @media screen and (max-width: 350px) {
 .buttons {
     text-align: center;
+    display: grid;
   }
 }
 .buttons button,
@@ -71,11 +73,11 @@ main {
 .view-menu-button:hover:before {
   transform: translateY(1rem);
 }
-.book-table-button {
+.view-location-button {
   color: black;
   background-color: rgb(235, 235, 235);
 }
-.book-table-button:hover {
+.view-location-button:hover {
   color: white;
   background-color: rgb(25, 25, 25);
 }
@@ -91,8 +93,8 @@ main {
   margin-left: -.5rem;
 }
 .rating {
-  width: 4.5rem;
-  margin-top: -1rem;
+  width: 5rem;
+  margin: .5rem 0 0 -.5rem;
 }
 
 .food-display-section {

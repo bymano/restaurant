@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  padding: 0 10rem;
+  padding: 0 1rem;
   margin-bottom: 5rem;
   animation: swipeUp 1.1s ease forwards;
   transform: translateY(30%);
@@ -12,60 +12,43 @@
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 1640px) {
-  .dishes-grid {
-    padding: 0 5rem;
-  }
-}
-@media screen and (max-width: 860px) {
-  .dishes-grid {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5rem;
-    padding: 0 5rem;
-  }
-}
-@media screen and (max-width: 500px) and (min-width: 400px) {
-  .dishes-grid article {
-    transform: scale(.9);
-    padding: 0 .125rem;
-    margin: .5rem;
-  }
-  .dishes-grid {
-    padding: 1.25rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .dishes-grid {
-    font-size: 1.25rem;
-    grid-template-columns: 1fr;
-    padding: 0 2.5rem;
-  }
-}
 .dishes-grid article {
   position: relative;
   background-image: linear-gradient(to bottom right, rgb(215, 215, 215), rgb(245, 245, 245) 80%);
   background-color: grey;
   font-size: inherit;
-  font-size: 1.25rem;
   border-radius: 35px;
-  padding: 7.5rem 7.5rem 0 2rem;
+  padding: 0 6.25vw 2vw 1.77vw;
+  padding-top: max(6.25vw, 75px);
   max-width: 9.5rem;
-  margin: 1rem;
+  margin: 1rem 1rem 5rem 1rem;
   text-wrap: nowrap;
   cursor: pointer;
   transition: .35s;
+}
+@media screen and (max-width: 750px) {
+  .dishes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .dishes-grid article:hover {
   background-image: none;
   background-color: rgb(255, 125, 125);
 }
-.dishes-grid article img {
+.dish-image-container {
   position: absolute;
-  top: -32.5%;
-  left: 10.5%;
-  width: 12.5rem;
-  height: 12.5rem;
+  top: -25%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.dish-image-container img {
+  width: max(11vw, 115px);
+  height: max(11vw, 115px);
   object-fit: cover;
 }
 .second-dish {
@@ -75,10 +58,9 @@
   left: 18%;
 }
 .dish-ingredients {
-  font-size: .75rem;
+  font-size: 1rem;
   margin: -.5rem 0 3rem 0;
 }
 .dishes-grid article .dish-price {
-  font-size: .9rem;
   font-weight: 600;
 }
