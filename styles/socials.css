@@ -1,0 +1,18 @@
+.social-links {
+  position: fixed;
+  bottom: 50px;
+  right: -60px;
+  backdrop-filter: blur(5px);
+  padding: .25rem;
+  border-radius: 25px;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.social-links a{
+  margin-left: 2rem;
+}
+.social-links a img {
+  width: max(2vw, 26px);
+}
