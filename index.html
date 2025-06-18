@@ -45,7 +45,7 @@
       </div>
     </div>
       <div class="dropdown-nav" role="button" tabindex="0" aria-expanded="false">
-        <button><img loading="lazy" src="images/webp/hamburger-menu.webp"></button>
+        <button><img loading="lazy" src="images/webp/hamburger-menu.webp" aria-label="Open navigation menu"></button>
         <nav>
         <a href="#about-us" class="home-nav-button">Home</a>
         <a class="open-menu-button">Menu</a>
@@ -63,7 +63,7 @@
 
   <main id="home">
     <section class="hero-section">
-      <h1>Memories<br>made with<br>every bite.</h1>
+      <h1 aria-label="Restaurant Slogan">Memories<br>made with<br>every bite.</h1>
       <div class="buttons">
         <button class="view-menu-button open-menu-button">View Full Menu</button>
         <a href="#footer" class="book-table-button feedback-nav-button">Where is Kyna?</a>
@@ -111,8 +111,8 @@
     </article>
 
   </section>
-  <article class="full-menu">
-    <button class="close-menu-button">Close Menu</button>
+  <article class="full-menu" role="dialog" aria-label="Full menu overlay">
+    <button class="close-menu-button" aria-label="Close full menu">Close Menu</button>
     <div class="menu-container">
       <div class="categories-container"></div>
       <div class="types-container"></div>
@@ -159,8 +159,8 @@
   </footer>
 
   <div class="credits">Designed by Mano on Figma. Licensed under CC by 4.0 (Changes applied)</div>
-  <script src="scripts/navButtons.js"></script>
-  <script src="scripts/menuOptions.js" type="module"></script>
-  <script src="scripts/view_close-menu.js" type="module"></script>
+  <script src="scripts/navButtons.js" defer></script>
+  <script src="scripts/menuOptions.js" type="module" defer></script>
+  <script src="scripts/view_close-menu.js" type="module" defer></script>
 </body>
 </html>
