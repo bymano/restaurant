@@ -18,8 +18,8 @@
   background-color: grey;
   font-size: inherit;
   border-radius: 35px;
-  padding: 0 6.25vw 2vw 1.77vw;
-  padding-top: max(6.25vw, 75px);
+  padding: 0 6.25vw 1rem 1.77vw;
+  padding-top: max(6.25vw, 60px);
   max-width: 9.5rem;
   margin: 1rem 1rem 5rem 1rem;
   text-wrap: nowrap;
@@ -33,8 +33,7 @@
 }
 
 .dishes-grid article:hover {
-  background-image: none;
-  background-color: rgb(255, 125, 125);
+  opacity: .75;
 }
 .dish-image-container {
   position: absolute;
@@ -59,7 +58,7 @@
 }
 .dish-ingredients {
   font-size: 1rem;
-  margin: -.5rem 0 3rem 0;
+  margin: -.5rem 0 1rem 0;
 }
 .dishes-grid article .dish-price {
   font-weight: 600;

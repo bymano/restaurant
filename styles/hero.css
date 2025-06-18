@@ -34,7 +34,7 @@ main {
   margin: -1.5rem 0 2rem 0;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
 .buttons {
     text-align: center;
     display: grid;
