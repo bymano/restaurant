@@ -64,7 +64,7 @@
   font-weight: 600;
 }
 
-.dish-grid-menu-button {dd
+.dish-grid-menu-button {
   position: absolute;
   top: calc(50% - 16px - .75rem);
   right: -5rem;
