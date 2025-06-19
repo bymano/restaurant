@@ -49,6 +49,12 @@
 .contact-container h1 {
   font-size: 1.5em;
 }
+.contact-container h2 {
+  font-size: 1.15em;
+}
+.contact-container h3 {
+  font-size: .9em;
+}
 @media screen and (max-width: 650px) {
   .contact-container {
     flex-direction: column;
