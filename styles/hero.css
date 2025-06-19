@@ -1,3 +1,4 @@
+
 .buttons {
   margin: -1.5rem 0 2rem 0;
   text-wrap: nowrap;
@@ -66,6 +67,7 @@
   object-fit: contain;
   margin: -.5rem 0 0 -.5rem;
 }
+
 
 @media screen and (max-width: 700px) {
   main {

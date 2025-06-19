@@ -70,25 +70,26 @@
   }
 
   
-  .food-display-section {
-    animation: spin 1.25s ease forwards;
-    transform: rotate(500deg);
+.food-display-section {
+  animation: spin 1.25s ease forwards;
+  transform: rotate(500deg);
+}
+@keyframes spin {
+  100% {
+    transform: rotate(0);
   }
-  @keyframes spin {
-    100% {
-      transform: rotate(0);
-    }
-  }
+}
 
-  .food-display-section img {
-    width: max(40vw, 350px);
-    border-radius: 50%;
-    transition: transform 1s;
-    user-select: none;
-  }
-  .food-display-section img:hover {
-    transform: rotate(360deg);
-  }  
+.food-display-section img {
+  width: max(40vw, 350px);
+  object-fit: contain;
+  border-radius: 50%;
+  transition: transform 1s;
+  user-select: none;
+}
+.food-display-section img:hover {
+  transform: rotate(360deg);
+}
 
   </style>
 </head>
