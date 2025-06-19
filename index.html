@@ -145,43 +145,76 @@
     </aside>
   </main>
 
-  <section class="dishes-grid" id="dishes-grid">
-    <article class="open-menu-button" role="button" tabindex="0">
-      <div class="dish-image-container">
-        <img loading="lazy" src="images/webp/tabouleh.webp" height="500" width="500" alt="Lebanese Tabbouleh Plate">
-      </div>
-      <p class="dish-name">Tabouleh</p>
-      <p class="dish-ingredients">With fresh mint&nbsp;&nbsp;</p>
-      <p class="dish-price">$5.75</p>
-    </article>
-    <article class="open-menu-button" role="button" tabindex="0">
-      <div class="dish-image-container">
-        <img loading="lazy" class="second-dish" src="images/webp/fried-kibbeh.webp" height="225" width="225" alt="Fried Kibbeh Plate">
-      </div>
-      <p class="dish-name">Fried Kibbeh</p>
-      <p class="dish-ingredients">With yogurt sauce</p>
-      <p class="dish-price">$7.00</p>
-    </article>
-    <article class="open-menu-button" role="button" tabindex="0">
-      <div class="dish-image-container">
-        <img loading="lazy" src="images/webp/french-fries.webp" width="500" height="500" alt="French Fries Plate">
-      </div>
-      <p class="dish-name">French Fries</p>
-      <p class="dish-ingredients">With ketchup&nbsp;&nbsp;&nbsp;&nbsp;</p>
-      <p class="dish-price">$5.00</p>
-    </article>
-    <article class="open-menu-button last-dish" role="button" tabindex="0">
-      <div class="dish-image-container">
-        <img loading="lazy" class="fourth-dish" src="images/webp/labneh.webp" height="433" width="577" alt="Lebanese Labneh Plate">
-      </div>
-      <p class="dish-name">Labneh Baladiyeh</p>
-      <p class="dish-ingredients">With olive oil </p>
-      <p class="dish-price">$4.00</p>
-    </article>
-    <article class="view-rest open-menu-button">
-      <span>See the rest</span>
-    </article>
-  </section>
+<section class="dishes-grid" id="dishes-grid">
+  <article 
+    class="open-menu-button" 
+    role="button" 
+    tabindex="0" 
+    aria-haspopup="dialog" 
+    aria-expanded="false" 
+    aria-controls="popup-tabouleh"
+  >
+    <div class="dish-image-container">
+      <img loading="lazy" src="images/webp/tabouleh.webp" height="500" width="500" alt="Lebanese Tabbouleh Plate">
+    </div>
+    <p class="dish-name">Tabouleh</p>
+    <p class="dish-ingredients">With fresh mint&nbsp;&nbsp;</p>
+    <p class="dish-price">$5.75</p>
+  </article>
+
+  <article 
+    class="open-menu-button" 
+    role="button" 
+    tabindex="0" 
+    aria-haspopup="dialog" 
+    aria-expanded="false" 
+    aria-controls="popup-fried-kibbeh"
+  >
+    <div class="dish-image-container">
+      <img loading="lazy" class="second-dish" src="images/webp/fried-kibbeh.webp" height="225" width="225" alt="Fried Kibbeh Plate">
+    </div>
+    <p class="dish-name">Fried Kibbeh</p>
+    <p class="dish-ingredients">With yogurt sauce</p>
+    <p class="dish-price">$7.00</p>
+  </article>
+
+  <article 
+    class="open-menu-button" 
+    role="button" 
+    tabindex="0" 
+    aria-haspopup="dialog" 
+    aria-expanded="false" 
+    aria-controls="popup-french-fries"
+  >
+    <div class="dish-image-container">
+      <img loading="lazy" src="images/webp/french-fries.webp" width="500" height="500" alt="French Fries Plate">
+    </div>
+    <p class="dish-name">French Fries</p>
+    <p class="dish-ingredients">With ketchup&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p class="dish-price">$5.00</p>
+  </article>
+
+  <article 
+    class="open-menu-button last-dish" 
+    role="button" 
+    tabindex="0" 
+    aria-haspopup="dialog" 
+    aria-expanded="false" 
+    aria-controls="popup-labneh"
+  >
+    <div class="dish-image-container">
+      <img loading="lazy" class="fourth-dish" src="images/webp/labneh.webp" height="433" width="577" alt="Lebanese Labneh Plate">
+    </div>
+    <p class="dish-name">Labneh Baladiyeh</p>
+    <p class="dish-ingredients">With olive oil </p>
+    <p class="dish-price">$4.00</p>
+  </article>
+
+  <article class="view-rest open-menu-button" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-controls="popup-rest">
+    <span>See the rest</span>
+  </article>
+</section>
+
 
   <article class="full-menu" role="dialog" aria-label="Full menu overlay">
     <button class="close-menu-button" aria-label="Close full menu">Close Menu</button>
