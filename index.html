@@ -10,18 +10,23 @@
 
   <meta property="og:title" content="Kyna Restaurant | Memories Made With Every Bite">
   <meta property="og:description" content="Enjoy Lebanese cuisine at Kyna in Sidon. Great food, cozy atmosphere, and unforgettable experiences.">
-  <meta property="og:image" content="https://bymano.github.io/restaurant/images/tabouleh.png">
-  <meta property="og:url" content="https://bymano.github.io/restaurant">
+  <meta property="og:image" content="https://kyna-restaurant.netlify.app/images/tabouleh.png">
+  <meta property="og:url" content="https://kyna-restaurant.netlify.app">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kyna Restaurant | Memories Made With Every Bite">
   <meta name="twitter:description" content="Authentic Lebanese food and heartfelt dining at Kyna in Sidon.">
-  <meta name="twitter:image" content="https://bymano.github.io/restaurant/images/tabouleh.png">
+  <meta name="twitter:image" content="https://kyna-restaurant.netlify.app/images/tabouleh.png">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sevillana&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap" rel="stylesheet">
+  </noscript>
   <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
@@ -32,12 +37,66 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/full-menu.css">
   <title>Kyna Lebanese Restaurant | Sidon</title>
+  <style>
+    main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 3rem;
+    margin-bottom: 7.5rem;
+    box-sizing: border-box;
+  }
+
+  .hero-section {
+    font-weight: 600;
+    transform: translateX(-35%);
+    animation: swipeRight .7s ease forwards;
+  }
+  @keyframes swipeRight {
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hero-section h1 {
+    font-size: max(5vw, 50px);
+    line-height: max(5.75vw, 60px);
+    text-wrap: nowrap;
+    font-family: 'Sofia', cursive, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  }
+  .hero-section h1::selection {
+    background-color: black;
+    color: white; 
+  }
+
+  
+  .food-display-section {
+    animation: spin 1.25s ease forwards;
+    transform: rotate(500deg);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  .food-display-section img {
+    width: max(40vw, 350px);
+    border-radius: 50%;
+    transition: transform 1s;
+    user-select: none;
+  }
+  .food-display-section img:hover {
+    transform: rotate(360deg);
+  }  
+
+  </style>
 </head>
 <body>
   <div class="social-links">
-    <a href="https://instagram.com/kyna.restaurant" target="_blank"><img src="images/webp/Instagram.webp"></a>
-    <a href="https://facebook.com/kyna.restaurant" target="_blank"><img src="images/webp/facebook.webp"></a>
-    <a href="https://tiktok.com/@kyna.restaurant" target="_blank"><img src="images/webp/tiktok.webp"></a>
+    <a href="https://instagram.com/kyna.restaurant" target="_blank"><img src="images/webp/Instagram.webp" height="32" width="32" alt="Instagram Icon"></a>
+    <a href="https://facebook.com/kyna.restaurant" target="_blank"><img src="images/webp/facebook.webp" height="32" width="32" alt="Facebook Icon"></a>
+    <a href="https://tiktok.com/@kyna.restaurant" target="_blank"><img src="images/webp/tiktok.webp" height="32" width="32" alt="Tiktok Icon"></a>
   </div>
   <header>
     <div class="introduction-section">
@@ -46,10 +105,10 @@
       </div>
     </div>
       <div class="dropdown-nav" role="button" tabindex="0" aria-expanded="false">
-        <button><img loading="lazy" src="images/webp/hamburger-menu-small.webp" aria-label="Open navigation menu"></button>
+        <button><img src="images/webp/hamburger-menu-small.webp" aria-label="Open navigation menu" height="32" width="32"></button>
         <nav>
         <a href="#about-us" class="home-nav-button">Home</a>
-        <a class="open-menu-button">Menu</a>
+        <a href="#" class="open-menu-button">Menu</a>
         <a href='#about-us' class="about-us-nav-button">About Us</a>
         <a href='#footer' class="footer-nav-button">Location</a>        
         </nav>
@@ -72,31 +131,31 @@
       <a href="http://bit.ly/406cAT5" target="_blank" class="reviews">
         <span>Reviews</span>
         <div class="customers">
-          <img loading="lazy" src="images/webp/customer-1.webp" class="customer" alt="Smiling Customer">
-          <img loading="lazy" src="images/webp/customer-2.webp" class="customer" alt="Smiling Customer">
-          <img loading="lazy" src="images/webp/customer-3.webp" class="customer" alt="Smiling Customer">
-          <img loading="lazy" src="images/webp/customer-4.webp" class="customer" alt="Smiling Customer">
+          <img src="images/webp/customer-1.webp" class="customer" height="64" width="64" alt="Smiling Customer">
+          <img src="images/webp/customer-2.webp" height="64" width="64" class="customer" alt="Smiling Customer">
+          <img src="images/webp/customer-3.webp" height="64" width="64" class="customer" alt="Smiling Customer">
+          <img src="images/webp/customer-4.webp" height="64" width="64" class="customer" alt="Smiling Customer">
         </div>
-        <img loading="lazy" src="images/webp/five-stars-gold.webp" class="rating" alt="Five Star Rating">
+        <img src="images/webp/five-stars-gold.webp" height="38" width="192" class="rating" alt="Five Star Rating">
       </a>
     </section>
     <aside class="food-display-section">
-      <img loading="lazy" src="images/webp/tabouleh.webp" alt="Lebanese Tabbouleh Plate">
+      <img src="images/webp/tabouleh.webp" alt="Lebanese Tabbouleh Plate">
     </aside>
   </main>
 
   <section class="dishes-grid" id="dishes-grid">
     <article class="open-menu-button" role="button" tabindex="0">
       <div class="dish-image-container">
-        <img loading="lazy" src="images/webp/tabouleh.webp" alt="Lebanese Tabbouleh Plate">
+        <img loading="lazy" src="images/webp/tabouleh.webp" height="500" width="500" alt="Lebanese Tabbouleh Plate">
       </div>
       <p class="dish-name">Tabouleh</p>
       <p class="dish-ingredients">With fresh mint&nbsp;&nbsp;</p>
       <p class="dish-price">$5.75</p>
     </article>
-    <article class="open-menu-button" role="buton" tabindex="0">
+    <article class="open-menu-button" role="button" tabindex="0">
       <div class="dish-image-container">
-        <img loading="lazy" class="second-dish" src="images/webp/fried-kibbeh.webp" alt="Fried Kibbeh Plate">
+        <img loading="lazy" class="second-dish" src="images/webp/fried-kibbeh.webp" height="225" width="225" alt="Fried Kibbeh Plate">
       </div>
       <p class="dish-name">Fried Kibbeh</p>
       <p class="dish-ingredients">With yogurt sauce</p>
@@ -104,7 +163,7 @@
     </article>
     <article class="open-menu-button" role="button" tabindex="0">
       <div class="dish-image-container">
-        <img loading="lazy" src="images/webp/french-fries.webp" alt="French Fries Plate">
+        <img loading="lazy" src="images/webp/french-fries.webp" width="500" height="500" alt="French Fries Plate">
       </div>
       <p class="dish-name">French Fries</p>
       <p class="dish-ingredients">With ketchup&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -112,12 +171,11 @@
     </article>
     <article class="open-menu-button last-dish" role="button" tabindex="0">
       <div class="dish-image-container">
-        <img loading="lazy" class="fourth-dish" src="images/webp/labneh.webp" alt="Lebanese Labneh Plate">
+        <img loading="lazy" class="fourth-dish" src="images/webp/labneh.webp" height="433" width="577" alt="Lebanese Labneh Plate">
       </div>
       <p class="dish-name">Labneh Baladiyeh</p>
       <p class="dish-ingredients">With olive oil </p>
       <p class="dish-price">$4.00</p>
-      <button class="dish-grid-menu-button open-menu-button"><img src="images/webp/right-arrow.webp"></button>
     </article>
     <article class="view-rest open-menu-button">
       <span>See the rest</span>
@@ -146,17 +204,17 @@
     <br>
     <div class="contact-container">
       <div class="location-container">
-        <img src="images/webp/location.webp" alt="Location Icon">
+        <img src="images/webp/location.webp" height="75" width="75" alt="Location Icon">
         <h1>Location</h1>
         <h3>Saida,&nbsp;&nbsp;Achmoun Area</h3>
       </div>
       <div class="call-container">
-        <img src="images/webp/phone.webp" alt="Phone Icon">
+        <img src="images/webp/phone.webp" height="75" width="75" alt="Phone Icon">
         <h1>Call us</h1>
         <h3>+961&nbsp;&nbsp;70&nbsp;&nbsp;880&nbsp;&nbsp;085</h3>
       </div>
       <div class="hours-container">
-        <img src="images/webp/calender.webp" alt="Calender Icon">
+        <img src="images/webp/calender.webp" height="75" width="75" alt="Calender Icon">
         <h1>Monday - Sunday</h1>
         <h3>9:00&nbsp;AM - 1:00&nbsp;AM</h3>
           <h3>Breakfast: 9:00&nbsp;AM - 12:30&nbsp;PM</h3>

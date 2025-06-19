@@ -15,4 +15,5 @@
 }
 .social-links a img {
   width: max(2vw, 26px);
+  object-fit: contain;
 }

@@ -64,25 +64,11 @@
   font-weight: 600;
 }
 
-.dish-grid-menu-button {
-  position: absolute;
-  top: calc(50% - 16px - .75rem);
-  right: -5rem;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: .75rem;
-  display: flex;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
 .dishes-grid .view-rest {
   position: absolute;
   bottom: min(-7.5vw, -75px);
   background-image: none;
   padding: 1rem 3.5rem;
-  background-color: orangered;
+  background-color: rgb(175, 0, 0);
   color: white;
 }

@@ -28,7 +28,7 @@ header div {
 .introduction-section .logo-container h1 {
   font-size: 2.5rem;
   font-weight: 300;
-  font-family: 'Sevillana';
+  font-family: 'Sevillana', system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   text-shadow: 0 0 5px;
 }
 
@@ -48,6 +48,7 @@ header div {
 }
 .dropdown-nav button img {
   width: 20px;
+  object-fit: contain;
 }
 .dropdown-nav nav {
   position: absolute;
