@@ -22,6 +22,7 @@ const homeNav = configureNavigation('home-nav-button', 'home')
 const menuNav = configureNavigation('menu-nav-button', 'dishes-grid');
 const aboutUsNav = configureNavigation('about-us-nav-button', 'about-us');
 const footerNav = configureNavigation('footer-nav-button', 'footer');
+const galleryNav = configureNavigation('gallery-nav-button', 'gallery');
 const navOptions = [homeNav, menuNav, aboutUsNav, footerNav];
 const scrollOptions = { behavior: 'smooth', block: 'center'};
 activateNavigationButtons();
